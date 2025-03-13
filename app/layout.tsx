@@ -3,8 +3,10 @@ import { JetBrains_Mono } from "next/font/google";
 import Navbar from "./components/shared/Navbar";
 import Footer from "./components/shared/Footer";
 import PageTransition from "./components/shared/PageTransition";
+import StairTransition from "./components/shared/StairTransition";
+import { ThemeProvider } from "@/lib/theme-provider";
 import "./globals.css";
-
+import ChatbotButton from "./components/chatbot/ChatbotButton";
 
 const jetbrainsMono = JetBrains_Mono({
   variable: "--font-jetbrainsMono",
@@ -23,15 +25,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${jetbrainsMono.variable} antialiased`}
       >
-        <Navbar />
-        <PageTransition>
-        {children}
-        </PageTransition>
-        <Footer />
+        <ThemeProvider>
+          <Navbar />
+          <StairTransition />
+          <PageTransition>
+          {children}
+          </PageTransition>
+          <Footer />
+          <ChatbotButton />
+        </ThemeProvider>
       </body>
     </html>
   );
