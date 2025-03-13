@@ -79,9 +79,13 @@ export default function Navbar() {
 
                 <div className="hidden xl:flex items-center gap-4">
                     <ThemeToggle />
-                    <Link href='/contact'>
+                    <a 
+                        href="https://drive.google.com/file/d/1b1UmRp-aclxS4fYWcRMTRizi2ghGKTNF/view?usp=sharing" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                    >
                         <Button className='text-xl'>Resume</Button>
-                    </Link>
+                    </a>
                     <Link href='/contact'>
                         <Button className='text-xl'>Contact Me</Button>
                     </Link>
@@ -126,9 +130,15 @@ export default function Navbar() {
                             
                             {/* Buttons */}
                             <div className="flex flex-col items-center gap-4 mt-8">
-                                <Link href='/contact' className="w-full max-w-[200px]" onClick={() => setIsOpen(false)}>
+                                <a 
+                                    href="https://drive.google.com/file/d/1b1UmRp-aclxS4fYWcRMTRizi2ghGKTNF/view?usp=sharing" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer" 
+                                    className="w-full max-w-[200px]" 
+                                    onClick={() => setIsOpen(false)}
+                                >
                                     <Button className='text-lg w-full'>Resume</Button>
-                                </Link>
+                                </a>
                                 <Link href='/contact' className="w-full max-w-[200px]" onClick={() => setIsOpen(false)}>
                                     <Button className='text-lg w-full'>Contact Me</Button>
                                 </Link>

@@ -92,7 +92,7 @@ export default function Contact() {
                     <div>
                       <h3 className="font-medium text-lg mb-1">Email</h3>
                       <a href="mailto:satvik@example.com" className="text-secondary/70 dark:text-secondary-light/70 hover:text-accent transition-colors">
-                        satvik@example.com
+                        satvik.sawhney2005@gmail.com
                       </a>
                     </div>
                   </div>
@@ -103,8 +103,8 @@ export default function Contact() {
                     </div>
                     <div>
                       <h3 className="font-medium text-lg mb-1">Phone</h3>
-                      <a href="tel:+1234567890" className="text-secondary/70 dark:text-secondary-light/70 hover:text-accent transition-colors">
-                        +1 (234) 567-890
+                      <a href="tel:+918700645229" className="text-secondary/70 dark:text-secondary-light/70 hover:text-accent transition-colors">
+                        +91 870-0645229
                       </a>
                     </div>
                   </div>
@@ -116,7 +116,7 @@ export default function Contact() {
                     <div>
                       <h3 className="font-medium text-lg mb-1">Location</h3>
                       <p className="text-secondary/70 dark:text-secondary-light/70">
-                        San Francisco, California
+                        New Delhi, Delhi, India
                       </p>
                     </div>
                   </div>
@@ -127,7 +127,7 @@ export default function Contact() {
                 <h3 className="text-xl font-bold mb-6 pb-2 border-b border-accent/20">Connect With Me</h3>
                 <div className="flex justify-center gap-6">
                   <a 
-                    href="https://linkedin.com" 
+                    href="https://linkedin.com/in/SawhneySatvik" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="bg-secondary/10 dark:bg-secondary-light/10 p-4 rounded-full hover:bg-accent/20 transition-colors flex items-center justify-center"
@@ -136,7 +136,7 @@ export default function Contact() {
                     <FiLinkedin className="text-2xl text-accent" />
                   </a>
                   <a 
-                    href="https://github.com" 
+                    href="https://github.com/SawhneySatvik" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="bg-secondary/10 dark:bg-secondary-light/10 p-4 rounded-full hover:bg-accent/20 transition-colors flex items-center justify-center"
@@ -145,7 +145,7 @@ export default function Contact() {
                     <FiGithub className="text-2xl text-accent" />
                   </a>
                   <a 
-                    href="https://twitter.com" 
+                    href="https://x.com/SawhneySatvik" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="bg-secondary/10 dark:bg-secondary-light/10 p-4 rounded-full hover:bg-accent/20 transition-colors flex items-center justify-center"

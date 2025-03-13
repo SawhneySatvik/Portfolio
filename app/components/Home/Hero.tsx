@@ -19,11 +19,16 @@ export default function Hero(){
 
                         {/* Buttons */}
                         <div className="flex flex-col sm:flex-row justify-center xl:justify-start items-center gap-4 md:gap-6 mb-6 md:mb-8">
-                            <Link href="/resume" className="w-full sm:w-auto">
+                            <a 
+                                href="https://drive.google.com/file/d/1b1UmRp-aclxS4fYWcRMTRizi2ghGKTNF/view?usp=sharing" 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                className="w-full sm:w-auto"
+                            >
                                 <Button variant={'outline'} size='lg' className='w-full sm:w-auto uppercase flex items-center justify-center gap-2 text-sm md:text-base px-6 py-3 h-auto'>
                                     View Resume <FiFileText className='text-lg ml-1'/>
                                 </Button>
-                            </Link>
+                            </a>
                             <Link href="/contact" className="w-full sm:w-auto">
                                 <Button size='lg' className='w-full sm:w-auto uppercase flex items-center justify-center gap-2 text-sm md:text-base px-6 py-3 h-auto'>
                                     Contact Me <FiMail className='text-lg ml-1'/>
