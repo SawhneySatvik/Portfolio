@@ -71,14 +71,14 @@ interface BallCanvasProps {
 const BallCanvas = ({ icon, name, setActiveTech }: BallCanvasProps) => {
   const [error, setError] = useState(false);
 
-  // Fallback to a default icon if there's an error
-  const handleError = () => {
-    console.error(`Error loading icon: ${icon}`);
-    setError(true);
-  };
-
   // Preload the image to check for errors
   useEffect(() => {
+    // Fallback to a default icon if there's an error
+    const handleError = () => {
+      console.error(`Error loading icon: ${icon}`);
+      setError(true);
+    };
+
     const img = new Image();
     img.src = icon;
     img.onerror = handleError;
