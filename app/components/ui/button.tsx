@@ -5,24 +5,25 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 dark:ring-offset-slate-950 dark:focus-visible:ring-slate-300",
+  "inline-flex items-center justify-center whitespace-nowrap rounded-full text-base font-semibold ring-offset-white transition-all duration-300 hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2",
   {
     variants: {
       variant: {
-        default: "bg-slate-900 text-slate-50 hover:bg-slate-900/90 dark:bg-slate-50 dark:text-slate-900 dark:hover:bg-slate-50/90",
-        destructive:
-          "bg-red-500 text-slate-50 hover:bg-red-500/90 dark:bg-red-900 dark:text-slate-50 dark:hover:bg-red-900/90",
-        outline:
-          "border border-slate-200 bg-white hover:bg-slate-100 hover:text-slate-900 dark:border-slate-800 dark:bg-slate-950 dark:hover:bg-slate-800 dark:hover:text-slate-50",
-        secondary:
-          "bg-slate-100 text-slate-900 hover:bg-slate-100/80 dark:bg-slate-800 dark:text-slate-50 dark:hover:bg-slate-800/80",
-        ghost: "hover:bg-slate-100 hover:text-slate-900 dark:hover:bg-slate-800 dark:hover:text-slate-50",
-        link: "text-slate-900 underline-offset-4 hover:underline dark:text-slate-50",
+        // Filled button (primary action)
+        filled: "bg-accent text-primary hover:bg-accent/90 border border-accent shadow-sm hover:shadow-md dark:hover:bg-accent/90 dark:hover:text-primary-light",
+        
+        // Inline button (secondary action)
+        inline: "border border-accent bg-transparent text-accent hover:bg-accent/10 shadow-sm hover:shadow-md",
+        
+        // Legacy variants for backward compatibility
+        default: "bg-accent text-primary hover:bg-accent/90 border border-accent shadow-sm hover:shadow-md dark:hover:bg-accent/90 dark:hover:text-primary-light",
+        primary: "bg-primary text-white hover:bg-primary/90 shadow-sm hover:shadow-md",
+        outline: "border border-accent bg-transparent text-accent hover:bg-accent/10 shadow-sm hover:shadow-md",
       },
       size: {
         default: "h-10 px-4 py-2",
-        sm: "h-9 rounded-md px-3",
-        lg: "h-11 rounded-md px-8",
+        sm: "h-9 rounded-full px-3 text-sm",
+        lg: "h-11 rounded-full px-8 text-lg",
         icon: "h-10 w-10",
       },
     },
